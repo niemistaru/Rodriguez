@@ -5,9 +5,40 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #A2ABB5;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.btn.btn-dark {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+#sivu {
+  align-items: center !important;
+  text-align: center;
+}
+.btn.btn-warning {
+  margin-top: 20px;
+}
+.form-group {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+#results {
+  text-align: center !important;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+.img-thumbnail {
+  max-height: 300px;
+  min-width: 140px;
+}
+
+#title {
+  font-weight: 500;
 }
