@@ -1,4 +1,5 @@
-//Luodaan muuttuja, jota käytetään komponentissa
+//Tämä oli alkuperäistä testailua varten
+
 const film = {
     title: 'Planet Terror',
     year: 2007,
@@ -24,4 +25,3 @@ const Film = () => {
 };
 
 export default Film;
-

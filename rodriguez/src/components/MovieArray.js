@@ -30,7 +30,7 @@ const MovieArray = (props) => {
 
     return (
       <div>
-        <table className="table table-danger table-striped-columns" id="results">
+        <table className="table table-danger table-striped-columns" id="movies">
           <thead>
               <tr key={props.id}>
                 <th scope="col">Poster</th>
@@ -49,8 +49,7 @@ const MovieArray = (props) => {
                 <td id="title"> {item.title}</td>
                 <td> {item.year}</td>
                 <td> {item.writers}</td>
-                <td> {item.plot}</td>
-            
+                <td> {item.plot}</td>      
               </tr>
             ))}
           </tbody>

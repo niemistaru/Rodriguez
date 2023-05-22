@@ -28,7 +28,7 @@ code {
   margin-right: 15%;
 }
 
-#results {
+#movies {
   text-align: center !important;
   align-items: center;
   margin-top: 10px;
@@ -41,4 +41,8 @@ code {
 
 #title {
   font-weight: 500;
+}
+.btn.btn-info {
+  margin-top: 10px;
+  margin-bottom: 30px;
 }

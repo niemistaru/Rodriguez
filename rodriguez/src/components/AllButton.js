@@ -16,7 +16,7 @@ const AllButton = () => {
   //Hae kaikki leffat
   const GetAllMovies = () => {
    
-    //tossa oli porttina kovakoodatti mut saisko sen näin...
+    //tossa oli porttina kovakoodattu mut saisko sen näin...
     fetch("http://localhost:" + PORT + "/api/getall")
     .then((results) => {
       return results.json();
