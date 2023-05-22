@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+const PORT = process.env.PORT || 5000;
+
 //nappuloita joka lähtöön
 const AllButton = () => {
    // const [query, setQuery] = useState();
@@ -15,7 +17,7 @@ const AllButton = () => {
   const GetAllMovies = () => {
    
     //tossa oli porttina kovakoodatti mut saisko sen näin...
-    fetch("http://localhost:5000/api/getall")
+    fetch("http://localhost:" + PORT + "/api/getall")
     .then((results) => {
       return results.json();
     })

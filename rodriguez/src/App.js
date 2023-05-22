@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import rodriguez from './Rodriguez1.jpg';
 import './App.css';
 import './index.css';
-//import AllButton from './components/AllButton';
+import AllButton from './components/AllButton';
 //import Film from './components/Film';
 import MovieArray from './components/MovieArray';
 
@@ -102,7 +102,7 @@ return (
         type="button"
         className="btn btn-danger"
         onClick={handleClick}>All Rodriguez Movies</button>
-      
+        <AllButton />
       <MovieArray data={results} />
     </div>
   </div>
