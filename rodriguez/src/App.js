@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import rodriguez from './Rodriguez1.jpg';
 import './App.css';
 import './index.css';
@@ -8,7 +8,6 @@ import MovieArray from './components/MovieArray';
 
 /*********************REACT APP******************************* */
 function App() {
-//Kevään 2022 videolla useStaten perässä oli noi heittomerkit, alun perin oli ilman
   const [query, setQuery] = useState();
   const [results, setResults] = useState([]);
 
@@ -40,8 +39,8 @@ function App() {
      });
     };
 
-//Hae id:n perusteella (kokeiin poistaa queryn tost alust)
-const GetOneMovie = () => {
+//Hae id:n perusteella
+const GetOneMovie = (query) => {
   fetch("http://localhost:5000/api/" + query)
   .then((results) => {
     return results.json();
@@ -80,7 +79,7 @@ return (
         </form>
 
         <div>
-        <p>Or list all Rodriguez Movies:</p>
+        <p>Or list all movies directed by Robert Rodriguez:</p>
         <button
         type="button"
         className="btn btn-danger"

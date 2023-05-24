@@ -20,6 +20,7 @@ code {
   align-items: center !important;
   text-align: center;
 }
+
 .btn.btn-warning {
   margin-top: 20px;
 }
@@ -29,6 +30,7 @@ code {
 }
 
 #movies {
+  width: 100%;
   text-align: center !important;
   align-items: center;
   margin-top: 10px;

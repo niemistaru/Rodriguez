@@ -29,7 +29,7 @@ const MovieArray = (props) => {
     };
 
     return (
-      <div>
+      <div id="taulukko">
         <table className="table table-danger table-striped-columns" id="movies">
           <thead>
               <tr key={props.id}>
